@@ -46,7 +46,7 @@ const stageContent = {
 }
 
 const HomeInfo = ({ currentStage }) => {
-    return stageContent[currentStage];
+    return stageContent[currentStage] || null;
 }
 
 export default HomeInfo
