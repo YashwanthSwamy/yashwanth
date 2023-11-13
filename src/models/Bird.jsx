@@ -4,7 +4,7 @@ import { useAnimations, useGLTF } from '@react-three/drei';
 import BirdScene from '../assets/3d/bird.glb';
 
 
-const Bird = ({isRotating}) => {
+const Bird = () => {
     const {scene, animations} = useGLTF(BirdScene);
     const birdRef = useRef();
     const {actions} = useAnimations(animations, birdRef);
@@ -14,20 +14,20 @@ const Bird = ({isRotating}) => {
     }, []);
 
     useFrame(({clock, camera}) => {
-        birdRef.current.position.y = Math.sin(clock.getElapsedTime() * 0.2) + 2;
+        birdRef.current.position.y = Math.sin(clock.elapsedTime)* 0.2 + 2;
 
-        if(birdRef.current.position.x < camera.position.x + 10){
+        if(birdRef.current.position.x > camera.position.x + 10){
             birdRef.current.rotation.y = Math.PI;
-        } else if(birdRef.current.position.x < camera.position.x + 10){
+        } else if(birdRef.current.position.x < camera.position.x - 10){
             birdRef.current.rotation.y = 0;
         }
 
         if(birdRef.current.rotation.y === 0){
-            birdRef.current.rotation.x += 0.01;
-            birdRef.current.rotation.z -= 0.01;
+            birdRef.current.position.x += 0.01;
+            birdRef.current.position.z -= 0.01;
         } else{
-            birdRef.current.rotation.x -= 0.01;
-            birdRef.current.rotation.z += 0.01;
+            birdRef.current.position.x -= 0.01;
+            birdRef.current.position.z += 0.01;
         }
     });
     

@@ -65,7 +65,7 @@ const Home = () => {
                 intensity={0.5}
                 />  {/* iluiminates with a gradient like sky  adds detail to the scene */}
                 <Sky isRotating= {isRotating}/>
-                <Bird isRotating= {isRotating}/>
+                <Bird/>
                 <Island
                 position= {islandPosition}
                 scale= {islandScale}
