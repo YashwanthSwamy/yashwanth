@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import Loader from '../components/Loader';
 import Island from '../models/Islands';
+import Sky from '../models/sky';
 
 {/* <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
     POPUP
@@ -44,6 +45,7 @@ const Home = () => {
                 groundColor='#000000' 
                 intensity={0.5}
                 />  {/* iluiminates with a gradient like sky  adds detail to the scene */}
+                <Sky />
                 <Island
                 position= {islandPosition}
                 scale= {islandScale}
