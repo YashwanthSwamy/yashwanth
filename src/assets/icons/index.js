@@ -4,10 +4,7 @@ import git from './git.svg'
 import github from './github.svg'
 import html from './html.svg'
 import javascript from './javascript.svg'
-import mongodb from './mongodb.svg'
-import motion from './motion.svg'
 import mui from './mui.svg'
-import nextjs from './nextjs.svg'
 import nodejs from './nodejs.svg'
 import react from './react.svg'
 import redux from './redux.svg'
@@ -19,13 +16,26 @@ import twitter from './twitter.svg'
 import car from './car.svg'
 import estate from './estate.svg'
 import pricewise from './pricewise.svg'
-import snapgram from './snapgram.svg'
 import summiz from './summiz.svg'
-import threads from './threads.svg'
 import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import angular from './angular.webp'
+import python from './python.svg';
+import java from './java.svg';
+import spring from './springboot.svg';
+import flask from './flask.svg';
+import postgresql from './postgresql.svg';
+import elasticsearch from './elasticsearch.svg';
+import rabbitmq from './rabbitmq.svg';
+import redis from './redis.svg';
+import docker from './docker.svg';
+import kubernetes from './Kubernetes.svg';
+import aws from './aws.svg';
+import cuboulder from './cuboulder.svg';
+import uvce from './uvce.webp';
+import email from './email.svg';
 
 export {
     css,
@@ -34,10 +44,7 @@ export {
     github,
     html,
     javascript,
-    mongodb,
-    motion,
     mui,
-    nextjs,
     nodejs,
     react,
     redux,
@@ -49,11 +56,24 @@ export {
     car,
     estate,
     pricewise,
-    snapgram,
     summiz,
-    threads,
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    angular,
+    python,
+    java,
+    spring,
+    flask,
+    postgresql,
+    elasticsearch,
+    rabbitmq,
+    redis,
+    docker,
+    kubernetes,
+    aws,
+    cuboulder,
+    uvce,
+    email
 }

@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
     return (
         <header className='header'>
-            <NavLink to='/' className='w-10 h10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md'>
-                <p className='blue-gradient_text'>YS</p>
+            <NavLink to='/' className='w-16 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md'>
+                <p className='blue-gradient_text font-Mr_De_Haviland font-semibold text-2xl p-2' >yash</p>
             </NavLink>
             <nav className='flex text-lg gap-7 font-medium'>
                 <NavLink to='/about'  className={({isActive}) => isActive ? 'text-blue-500' : 'text-black'}>

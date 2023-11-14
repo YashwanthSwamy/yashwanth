@@ -1,10 +1,12 @@
 import { Suspense, useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import {Canvas} from '@react-three/fiber';
 import Fox from '../models/Fox';
 import Loader from '../components/Loader';
 import UseAlerts from '../hooks/UseAlerts';
 import Alert from '../components/Alert';
+import { socialLinks } from '../constants';
 
 const Contact = () => {
   const {alert, showAlert, hideAlert} = UseAlerts();
@@ -53,8 +55,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="flex relative lg:flex-row flex-col max-container h-[100vh]">
+    <section className=" max-container">
       {alert.show && <Alert {...alert} />}
+      <div className='flex relative lg:flex-row flex-col'>
+
       <div className="flex flex-1 flex-col min-w-[50%]">
         <h1 className="head-text">Get in Touch</h1>
         <form 
@@ -135,6 +139,24 @@ const Contact = () => {
           </Suspense>
         </Canvas>
       </div>
+      </div>
+
+      <hr className="border-slate-200 mt-12"/>
+      <div className="flex flex-row gap-6 justify-center mt-4">
+          {socialLinks.map((link, index) => (
+            <Link  to={link.link}
+            target="_blank" rel="noopener noreferrer"
+            className="block-container w-12 h-12 " 
+            key={`${link.name}-${index}`}
+            >
+              <div className="btn-back rounded-xl"/>
+              <div className="btn-front rounded-xl justify-center items-center flex flex-row ">
+                <img src={link.iconUrl} alt={link.name} className="w-1/2 h-1/2 object-contain" />
+              </div>
+            </Link>
+          ))}
+      </div>
+
     </section>
   )
 }

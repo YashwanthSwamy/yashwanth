@@ -11,7 +11,9 @@ const Projects = () => {
       </h1>
       <div>
         <p className="mt-5 flex flex-col gap-3 text-slate-500">
-          I've embarked numerous projects throughout the years, but these are thr ones I hold close to my heart.
+        Over the years, my journey has been adorned with diverse projects, each adding a unique brushstroke 
+        to my professional canvas. Among these endeavors, there are certain projects that hold an exceptional 
+        place in my heart—ones that not only showcase my skills but also embody my passion and commitment.
         </p>
       </div>
 

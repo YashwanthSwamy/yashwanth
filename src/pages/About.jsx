@@ -1,7 +1,7 @@
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import CTA from '../components/CTA';
-import { skills, experiences } from "../constants";
+import { skills, experiences, projects, education } from "../constants";
 
 const About = () => {
   return (
@@ -12,7 +12,11 @@ const About = () => {
       </h1>
       <div>
         <p className="mt-5 flex flex-col gap-3 text-slate-500">
-          A Full Stack Developer with 4+ years of experience in developing web applications.
+        A seasoned Full Stack Developer with over 4 years of robust experience specializing in the development 
+        of cutting-edge web applications. My journey in software engineering, from my academic pursuits to my 
+        roles at Siemens and NASDAQ, has equipped me with a diverse skill set spanning both front-end and back-end 
+        technologies. I am passionate about crafting user-centric solutions and leveraging emerging technologies 
+        to create seamless and impactful web applications.
         </p>
       </div>
 
@@ -20,22 +24,52 @@ const About = () => {
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text"> My Skills</h3>
         <div className="mt-16 flex flex-wrap gap-12">
-          {skills.map((skill) => (
-            <div className="block-container w-20 h-20 ">
+          {skills.map((skill, index) => (
+            <div className="block-container w-24 h-20 " key={`${skill.university}-${index}`}>
               <div className="btn-back rounded-xl"/>
-              <div className="btn-front rounded-xl flex justify-center items-center">
+              <div className="btn-front rounded-xl justify-center items-center flex flex-col ">
                 <img src={skill.imageUrl} alt={skill.name} className="w-1/2 h-1/2 object-contain" />
+                <p className='text-sm'>{skill.name}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
 
+      {/* education */}
+      <div>
+        <h3 className="subhead-text"> Education</h3>
+      </div>
+      <div className="flex flex-wrap my-4 gap-16">
+        {education.map((education, index) => (
+          <div className=" w-full flex flex-row gap-12 mt-4" key={`${education.university}-${index}`}>
+            <div className="block-container w-12 h-12">
+              <div className={`btn-back rounded-xl ${education.theme}`}/>
+              <div className="btn-front rounded-xl flex justify-center items-center">
+              <img src={education.iconUrl} alt="project-icon" className="w-3/4 h-3/4 object-contain"/>
+              </div>
+            </div>
+
+            <div className="flex flex-col">
+              <h4 className="text-2xl font-poppins font-semibold">
+                {education.name}
+              </h4>
+              <p className='text-blue-500'> {education.date}</p>
+              <div className='flex flex-row items-center gap-8'>
+              <p className="mt-1 text-slate-500">
+                {education.university} - <span className='font-poppins font-semibold'>{education.gpa}</span>
+              </p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
       {/* experience */}
       <div className="py-16">
       <h3 className="subhead-text">Experience</h3>
       <p className="mt-5 flex flex-col gap-3 text-slate-500">
-          I've worked with a range of companies, leveling up my skills and teaming up with smart people. Here's a run down of my last few years:
+      Throughout my professional journey, I've collaborated with various companies, consistently elevating my skills while engaging with talented individuals. Here's a snapshot of my recent years:
       </p>
       </div>
 

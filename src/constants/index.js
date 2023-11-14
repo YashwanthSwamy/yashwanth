@@ -1,90 +1,64 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { nasdaq, siemens } from "../assets/images";
 import {
     car,
     contact,
-    css,
     estate,
     express,
-    git,
     github,
-    html,
-    javascript,
     linkedin,
-    mongodb,
-    motion,
-    mui,
-    nextjs,
+    angular,
     nodejs,
     pricewise,
     react,
     redux,
-    sass,
-    snapgram,
     summiz,
     tailwindcss,
-    threads,
-    typescript
+    typescript,
+    python,
+    java,
+    spring,
+    flask,
+    postgresql,
+    elasticsearch,
+    rabbitmq,
+    redis,
+    docker,
+    kubernetes,
+    aws,
+    cuboulder,
+    uvce,
+    email
 } from "../assets/icons";
 
 export const skills = [
     {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
+        imageUrl: python,
+        name: "Python",
+        type: "Programming Language",
     },
     {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
+        imageUrl: java,
+        name: "Java",
+        type: "Programming Language",
     },
     {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Programming Language",
     },
     {
         imageUrl: react,
         name: "React",
+        type: "Frontend",
+    },
+    {
+        imageUrl: angular,
+        name: "Angular",
+        type: "Frontend",
+    },
+    {
+        imageUrl: tailwindcss,
+        name: "Tailwind",
         type: "Frontend",
     },
     {
@@ -93,27 +67,68 @@ export const skills = [
         type: "State Management",
     },
     {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
+        imageUrl: nodejs,
+        name: "Node.js",
+        type: "Backend",
+    },
+
+    {
+        imageUrl: spring,
+        name: "Spring Boot",
+        type: "Backend",
     },
     {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
+        imageUrl: express,
+        name: "Express",
+        type: "Backend",
     },
     {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }
+        imageUrl: flask,
+        name: "",
+        type: "Backend",
+    },
+    {
+        imageUrl: postgresql,
+        name: "Postgresql",
+        type: "Database",
+    },
+    {
+        imageUrl: redis,
+        name: "Redis",
+        type: "Database",
+    },
+    {
+        imageUrl: elasticsearch,
+        name: "Elasticsearch",
+        type: "Database",
+    },
+    {
+        imageUrl: rabbitmq,
+        name: "RabbitMQ",
+        type: "Message Broker",
+    },
+    {
+        imageUrl: docker,
+        name: "",
+        type: "Deployment",
+    },
+    {
+        imageUrl: kubernetes,
+        name: "Kubernetes",
+        type: "Deployment",
+    },
+    {
+        imageUrl: aws,
+        name: "AWS",
+        type: "Cloud Services",
+    },
 ];
 
 export const experiences = [
     {
         title: "Software Engineer Intern",
         company_name: "NASDAQ",
-        icon: starbucks,
+        icon: nasdaq,
         iconBg: "#accbe1",
         date: "Jun 2023 - Aug 2023",
         points: [
@@ -125,8 +140,8 @@ export const experiences = [
     {
         title: "Senior Software Engineer",
         company_name: "SIEMENS",
-        icon: tesla,
-        iconBg: "#fbc3bc",
+        icon: siemens,
+        iconBg: "#b7e4c7",
         date: "Oct 2021 - Jul 2022",
         points: [
             "Architected and implemented Kubernetes scheduler jobs to replace traditional process-based schedulers, resulting in a significant 70% boost in the scalability of micro-services.",
@@ -137,7 +152,7 @@ export const experiences = [
     {
         title: "Software Engineer",
         company_name: "SIEMENS",
-        icon: shopify,
+        icon: siemens,
         iconBg: "#b7e4c7",
         date: "Jan 2019 - Sept 2021",
         points: [
@@ -148,8 +163,8 @@ export const experiences = [
     {
         title: "Junior Software Engineer",
         company_name: "SIEMENS",
-        icon: meta,
-        iconBg: "#a2d2ff",
+        icon: siemens,
+        iconBg: "#b7e4c7",
         date: "Jul 2018 - Dec 2018",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
@@ -162,9 +177,9 @@ export const experiences = [
 
 export const socialLinks = [
     {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
+        name: 'Email',
+        iconUrl: email,
+        link: 'mailto:yashwanthhs07@gmail.com',
     },
     {
         name: 'GitHub',
@@ -178,47 +193,66 @@ export const socialLinks = [
     }
 ];
 
+export const education = [
+    {
+        iconUrl: cuboulder,
+        theme: 'btn-back-black',
+        name: 'Masters in Computer Science',
+        university: 'University of Colorado Boulder',
+        date: "Aug 2022 - May 2024",
+        gpa: "3.8 out of 4.0",
+    },
+    {
+        iconUrl: uvce,
+        theme: 'btn-back-yellow',
+        name: 'Bachelors in Computer Science',
+        university: 'University Visvesvaraya College of Engineering',
+        date: "Aug 2014 - Jun 2018",
+        gpa: "72.5 out of 100",
+    },
+]
+
 export const projects = [
     {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        iconUrl: summiz,
+        theme: 'btn-back-yellow',
+        name: 'Study Buff',
+        description: "Developed a course recommendation platform for CU students, leveraging a sophisticated model trained on a 10,000-course dataset. It tailors’ suggestions using course syllabi and student feedback, optimizing data retrieval with Elastic Search integration.",
+        link: 'https://github.com/YashwanthSwamy/studyBuff',
     },
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'Broadband Mapping',
+        description: 'Planned and implemented an ArcGIS dashboard to support the Federal Communications Commission in their evaluation of nationwide cellular network coverage. Additionally, spearheaded cross-university training initiatives, empowering undergraduate students to develop state-specific data dashboards for well-informed decision-making.',
+        link: 'https://www.arcgis.com/apps/dashboards/c1402fc194574f0597677abf45330815',
     },
     {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+        iconUrl: pricewise,
+        theme: 'btn-back-red',
+        name: 'Home Service',
+        description: 'Developed a web application that will enable us to provide various community services to members of the public, such as carpentry, plumbing, and hair stylist.',
+        link: 'https://github.com/YashwanthSwamy/HomeService',
+    },
+    // {
+    //     iconUrl: threads,
+    //     theme: 'btn-back-green',
+    //     name: 'Full Stack Threads Clone',
+    //     description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
+    //     link: 'https://github.com/adrianhajdin/threads',
+    // },
+    {
+        iconUrl: car,
+        theme: 'btn-back-blue',
+        name: 'Depotfinity',
+        description: 'A web application that allows users to monitor IoT devices for electric vehicles.',
+        link: 'https://www.siemens.com/global/en/products/energy/emobility/depotfinity.html',
+    },
+    // {
+    //     iconUrl: snapgram,
+    //     theme: 'btn-back-pink',
+    //     name: 'Full Stack Instagram Clone',
+    //     description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
+    //     link: 'https://github.com/adrianhajdin/social_media_app',
+    // }
 ];
