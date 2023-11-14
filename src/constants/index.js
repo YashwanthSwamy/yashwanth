@@ -1,7 +1,6 @@
 import { nasdaq, siemens } from "../assets/images";
 import {
     car,
-    contact,
     estate,
     express,
     github,
@@ -27,7 +26,8 @@ import {
     aws,
     cuboulder,
     uvce,
-    email
+    email,
+    portfolio
 } from "../assets/icons";
 
 export const skills = [
@@ -132,9 +132,9 @@ export const experiences = [
         iconBg: "#accbe1",
         date: "Jun 2023 - Aug 2023",
         points: [
-            "Collaborated in the development of a report configuration tool using React and SpringBoot which achieved 22% reduction in processingtime for customers in reviewing configuration reports.",
-            "Implemented a proof ofconcept utilizing SpringCloudConfigServer to extract configuration reports from GitLab, show casing potential enhancements in system efficiency.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Collaborated in the development of a report configuration tool using React and SpringBoot which achieved 22% reduction in processing time for customers in reviewing configuration reports.",
+            "Implemented a proof of concept utilizing SpringCloudConfig Server to extract configuration reports from GitLab, show casing potential enhancements in system efficiency.",
+            "Implemented responsive design for report configuration tool to ensure cross-browser compatibility.",
         ],
     },
     {
@@ -146,7 +146,7 @@ export const experiences = [
         points: [
             "Architected and implemented Kubernetes scheduler jobs to replace traditional process-based schedulers, resulting in a significant 70% boost in the scalability of micro-services.",
             "Orchestrated the seamless migration of a micro-services application from Siemens' cloud to AWS (EKS), resulting in accelerated release cycles and a 34% increase in application reliability.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Participated in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
@@ -167,10 +167,8 @@ export const experiences = [
         iconBg: "#b7e4c7",
         date: "Jul 2018 - Dec 2018",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Enhanced device compatibility through the integration of Edit-Distance Algorithm, expanding the range of supported devices.",
+            "Elevated legacy code quality by boosting test coverage by 16%, introducing new NUnit test cases and automation tests to expedite bug detection, while simultaneously optimizing code maintenance through the implementation of diverse design patterns to modularize."
         ],
     },
 ];
@@ -222,7 +220,7 @@ export const projects = [
     },
     {
         iconUrl: estate,
-        theme: 'btn-back-black',
+        theme: 'btn-back-green',
         name: 'Broadband Mapping',
         description: 'Planned and implemented an ArcGIS dashboard to support the Federal Communications Commission in their evaluation of nationwide cellular network coverage. Additionally, spearheaded cross-university training initiatives, empowering undergraduate students to develop state-specific data dashboards for well-informed decision-making.',
         link: 'https://www.arcgis.com/apps/dashboards/c1402fc194574f0597677abf45330815',
@@ -234,25 +232,18 @@ export const projects = [
         description: 'Developed a web application that will enable us to provide various community services to members of the public, such as carpentry, plumbing, and hair stylist.',
         link: 'https://github.com/YashwanthSwamy/HomeService',
     },
-    // {
-    //     iconUrl: threads,
-    //     theme: 'btn-back-green',
-    //     name: 'Full Stack Threads Clone',
-    //     description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    //     link: 'https://github.com/adrianhajdin/threads',
-    // },
+    {
+        iconUrl: portfolio,
+        theme: 'btn-back-black',
+        name: 'Portfolio',
+        description: 'Crafted with React, Tailwind CSS, and Three.js, my portfolio offers an immersive experience integrating interactive interfaces and captivating 3D visuals. This project showcases my expertise in merging modern web technologies, providing users with a seamless exploration of my work through engaging 3D models and sleek, responsive design',
+        link: 'https://github.com/YashwanthSwamy/yashwanth',
+    },
     {
         iconUrl: car,
         theme: 'btn-back-blue',
         name: 'Depotfinity',
         description: 'A web application that allows users to monitor IoT devices for electric vehicles.',
         link: 'https://www.siemens.com/global/en/products/energy/emobility/depotfinity.html',
-    },
-    // {
-    //     iconUrl: snapgram,
-    //     theme: 'btn-back-pink',
-    //     name: 'Full Stack Instagram Clone',
-    //     description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-    //     link: 'https://github.com/adrianhajdin/social_media_app',
-    // }
+    }
 ];

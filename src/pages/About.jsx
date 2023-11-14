@@ -69,7 +69,7 @@ const About = () => {
       <div className="py-16">
       <h3 className="subhead-text">Experience</h3>
       <p className="mt-5 flex flex-col gap-3 text-slate-500">
-      Throughout my professional journey, I've collaborated with various companies, consistently elevating my skills while engaging with talented individuals. Here's a snapshot of my recent years:
+      Throughout my professional journey, I have collaborated with various companies, consistently elevating my skills while engaging with talented individuals. Here's a snapshot of my recent years:
       </p>
       </div>
 
