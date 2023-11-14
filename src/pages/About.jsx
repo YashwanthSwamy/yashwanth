@@ -85,7 +85,7 @@ const About = () => {
       </div>
 
       {/* contact */}
-      <hr className='border-slate-500 mt-4'/>
+      <hr className='border-slate-300 mt-4'/>
       <CTA/>
 
     </section>

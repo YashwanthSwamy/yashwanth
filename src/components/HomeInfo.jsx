@@ -19,7 +19,7 @@ const stageContent = {
             Hi! 👋 
             I am <span className='font-semibold'>Yashwanth Swamy</span> 
             <br/>
-            A Software Engineer From States
+            A Software Engineer who lives in United States
         </h1>
     ),
     2: (
