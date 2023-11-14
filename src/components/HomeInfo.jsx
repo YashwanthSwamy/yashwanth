@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 import arrow from '../assets/icons/arrow.svg';
+import resume from '../assets/Yashwanth_Resume.pdf';
 
 const InfoBox = ({content, link, btnText}) => {
   return (
@@ -15,12 +16,19 @@ const InfoBox = ({content, link, btnText}) => {
 
 const stageContent = {
     1: (
-        <h1 className='sm:text-l sm:leading-snug text-center neo-brutalism-blue text-white mx-5 py-4 px-8'>
+    <div className='info-box'>
+        <h1 className='font-medium sm:text-m text-center'>
             Hi! 👋 
             I am <span className='font-semibold'>Yashwanth Swamy</span> 
             <br/>
             A Software Engineer who lives in United States
         </h1>
+        <Link to={resume} target="_blank" rel="noopener noreferrer" className='neo-brutalism-white neo-btn'>
+        {'Resume'}
+        <img src={arrow} alt='arrow-right' className='w-4 h-4 object-contain'/>
+    </Link>
+    </div>
+        
     ),
     2: (
         <InfoBox 

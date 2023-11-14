@@ -7,6 +7,7 @@ import Loader from '../components/Loader';
 import UseAlerts from '../hooks/UseAlerts';
 import Alert from '../components/Alert';
 import { socialLinks } from '../constants';
+import Footer from '../components/Footer';
 
 const Contact = () => {
   const {alert, showAlert, hideAlert} = UseAlerts();
@@ -156,7 +157,6 @@ const Contact = () => {
             </Link>
           ))}
       </div>
-
     </section>
   )
 }

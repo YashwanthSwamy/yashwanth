@@ -37,6 +37,7 @@ import cuboulder from './cuboulder.svg';
 import uvce from './uvce.webp';
 import email from './email.svg';
 import portfolio from './portfolio.svg';
+import copyright from './copyright.svg'
 
 export {
     css,
@@ -77,5 +78,6 @@ export {
     cuboulder,
     uvce,
     email,
-    portfolio
+    portfolio,
+    copyright
 }
