@@ -9,6 +9,7 @@ import HomeInfo from '../components/HomeInfo';
 
 import sakura from '../assets/sakura.mp3';
 import { soundoff, soundon } from '../assets/icons';
+import Snow from '../models/Snow';
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
@@ -90,6 +91,10 @@ const Home = () => {
             isRotating={isRotating}
             setIsRotating={setIsRotating}
             setCurrentStage={setCurrentStage}
+          />
+          <Snow
+          position={planePosition}
+          scale={planeScale}
           />
           <Plane
             position={planePosition}

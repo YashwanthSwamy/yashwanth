@@ -89,7 +89,7 @@ export const skills = [
     },
     {
         imageUrl: postgresql,
-        name: "Postgresql",
+        name: "PostgreSQL",
         type: "Database",
     },
     {
