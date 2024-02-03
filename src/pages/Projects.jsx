@@ -10,7 +10,7 @@ const Projects = () => {
         My <span className="blue-gradient_text font-semibold drop-schadow">Projects</span>
       </h1>
       <div>
-        <p className="mt-5 flex flex-col gap-3 text-slate-500">
+        <p className="mt-5 flex flex-col gap-3 text-slate-500 text-justify">
         Over the years, my journey has been adorned with diverse projects, each adding a unique brushstroke 
         to my professional canvas. Among these endeavors, there are certain projects that hold an exceptional 
         place in my heart—ones that not only showcase my skills but also embody my passion and commitment.
@@ -31,7 +31,7 @@ const Projects = () => {
               <h4 className="text-2xl font-poppins font-semibold">
                 {project.name}
               </h4>
-              <p className="mt-2 text-slate-500">
+              <p className="mt-2 text-slate-500 text-justify">
                 {project.description}
               </p>
               <div className="mt-5 flex items-center gap-2 font-poppins">

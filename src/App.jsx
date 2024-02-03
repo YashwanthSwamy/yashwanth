@@ -1,20 +1,30 @@
-import {Route, BrowserRouter as Router, Routes} from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import {Home, About, Projects, Contact} from './pages';
+import { Home, About, Projects, Contact } from './pages';
+
+const scrollFunction = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+};
 
 const App = () => {
     return (
-        <main className='bg-slate-300/20 h-full w-full'>
+        <main className='bg-slate-300/20 h-auto lg:w-full md:w-full '>
             <Router>
-                <Navbar />
+                <div className='sticky top-0 z-10'>
+
+                    <Navbar />
+                </div>
                 <Routes>
-                    <Route  path='/' element={<Home/>}/>
-                    <Route  path='/about' element={<About/>}/>
-                    <Route  path='/projects' element={<Projects/>}/>
-                    <Route  path='/contact' element={<Contact/>}/>
+                    <Route path='/' element={<About />} />
+                    {/* <Route  path='/about' element={<About/>}/> */}
+                    <Route path='/projects' element={<Projects />} />
+                    <Route path='/contact' element={<Contact />} />
                 </Routes>
-                <Footer/>
+                <Footer />
             </Router>
         </main>
     )

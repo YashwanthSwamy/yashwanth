@@ -1,4 +1,4 @@
-import { nasdaq, siemens } from "../assets/images";
+import { nasdaq, siemens, my_pic } from "../assets/images";
 import {
     car,
     estate,
@@ -30,17 +30,31 @@ import {
     portfolio
 } from "../assets/icons";
 
+export const about = {
+        name :"Yashwanth Swamy", 
+        imageUrl: my_pic,
+        theme: 'btn-back-black',
+        info: "\
+        A seasoned Full Stack Developer with over 4 years of robust experience specializing in the development \
+        of cutting-edge web applications. My journey in software engineering, from my academic pursuits to my \
+        roles at Siemens and NASDAQ, has equipped me with a diverse skill set spanning both front-end and back-end \
+        technologies. I am passionate about crafting user-centric solutions and leveraging emerging technologies \
+        to create seamless and impactful web applications.\
+        "
+    }
+
+
 export const skills = [
     {
         imageUrl: python,
         name: "Python",
         type: "Programming Language",
     },
-    {
-        imageUrl: java,
-        name: "Java",
-        type: "Programming Language",
-    },
+    // {
+    //     imageUrl: java,
+    //     name: "Java",
+    //     type: "Programming Language",
+    // },
     {
         imageUrl: typescript,
         name: "TypeScript",
@@ -72,11 +86,11 @@ export const skills = [
         type: "Backend",
     },
 
-    {
-        imageUrl: spring,
-        name: "Spring Boot",
-        type: "Backend",
-    },
+    // {
+    //     imageUrl: spring,
+    //     name: "Spring Boot",
+    //     type: "Backend",
+    // },
     {
         imageUrl: express,
         name: "Express",
@@ -97,11 +111,11 @@ export const skills = [
         name: "Redis",
         type: "Database",
     },
-    {
-        imageUrl: elasticsearch,
-        name: "Elasticsearch",
-        type: "Database",
-    },
+    // {
+    //     imageUrl: elasticsearch,
+    //     name: "Elasticsearch",
+    //     type: "Database",
+    // },
     {
         imageUrl: rabbitmq,
         name: "RabbitMQ",
@@ -198,7 +212,7 @@ export const education = [
         name: 'Masters in Computer Science',
         university: 'University of Colorado Boulder',
         date: "Aug 2022 - May 2024",
-        gpa: "3.8 out of 4.0",
+        gpa: "3.9 out of 4.0",
     },
     {
         iconUrl: uvce,

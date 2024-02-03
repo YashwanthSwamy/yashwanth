@@ -8,9 +8,9 @@ const Navbar = () => {
                 <p className='blue-gradient_text font-Mr_De_Haviland font-semibold text-2xl pb-2' >ys</p>
             </NavLink>
             <nav className='flex lg:text-lg sm:text-sm gap-4  pl-2'>
-                <NavLink to='/about'  className={({isActive}) => isActive ? 'text-blue-500 font-semibold underline underline-offset-2' : 'text-black'}>
+                {/* <NavLink to='/about'  className={({isActive}) => isActive ? 'text-blue-500 font-semibold underline underline-offset-2' : 'text-black'}>
                     About
-                </NavLink>
+                </NavLink> */}
                 <NavLink to='/projects'  className={({isActive}) => isActive ? 'text-blue-500 font-semibold underline underline-offset-2' : 'text-black'}>
                     Projects
                 </NavLink>
