@@ -3,13 +3,6 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import { Home, About, Projects, Contact } from './pages';
 
-const scrollFunction = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-    }
-};
-
 const App = () => {
     return (
         <main className='bg-slate-300/20 h-auto lg:w-full md:w-full '>
